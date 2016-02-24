@@ -1,3 +1,0 @@
-# Android
-# kkk
-# Kawal
