@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:healthengine="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_gray">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/normal_gray">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/general_practice"
+            android:orientation="horizontal"
+            android:padding="7dp"
+            >
+
+            <LinearLayout
+                android:layout_weight="4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/general_practice"
+                android:orientation="vertical">
+                <healthengine.android.com.healthengine.FontedText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    healthengine:font="Lato-Regular.ttf"
+                    android:text="Monday, 11 Jan"
+                    android:textColor="#ffffff"
+                    />
+                <healthengine.android.com.healthengine.FontedText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    healthengine:font="Lato-Regular.ttf"
+                    android:text="08:00am"
+                    android:textColor="#ffffff"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/general_practice"
+                android:gravity="right"
+                android:orientation="vertical">
+                <healthengine.android.com.healthengine.FontedText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dr. Mark Kent"
+                    healthengine:font="Lato-Regular.ttf"
+                    android:textColor="#ffffff"
+
+                    />
+                <healthengine.android.com.healthengine.FontedText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    healthengine:font="Lato-Regular.ttf"
+                    android:text="CBD West Medical Centre"
+                    android:textColor="#ffffff"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <healthengine.android.com.healthengine.utils.CircularImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_launcher"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <healthengine.android.com.healthengine.FontedText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="BOOK THIS APPOINTMENT FOR"
+            android:background="@color/normal_gray"
+            android:textColor="#000000"
+            healthengine:font="Lato-Regular.ttf"
+            android:paddingTop="20dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="5dp"
+            />
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="#ffffff"
+            >
+
+            <healthengine.android.com.healthengine.FontedText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                healthengine:font="Lato-Medium.ttf"
+                android:text="Adam shaw"/>
+
+            <healthengine.android.com.healthengine.FontedText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                healthengine:font="Lato-Regular.ttf"
+                android:text="adam.shaw+test@healthengine.com.au"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <healthengine.android.com.healthengine.FontedText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        healthengine:font="Lato-Regular.ttf"
+                        android:text="0458888888"/>
+
+                    <healthengine.android.com.healthengine.FontedText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        healthengine:font="Lato-Regular.ttf"
+                        android:text="DOB: Jan 1, 1974"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <healthengine.android.com.healthengine.FontedText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        healthengine:font="Lato-Regular.ttf"
+                        android:text="123 Elm Street"/>
+
+                    <healthengine.android.com.healthengine.FontedText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        healthengine:font="Lato-Regular.ttf"
+                        android:text="Perth WA 6000"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow_right_black"
+        android:padding="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/normal_gray"/>
+        <healthengine.android.com.healthengine.FontedText
+            android:id="@+id/book_create_new_patient_profile_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            healthengine:font="Lato-Regular.ttf"
+            android:text="Create New Profile"
+            android:background="#ffffff"
+            android:textColor="@color/color_toolbar"
+           />
+
+        <healthengine.android.com.healthengine.FontedText
+            android:id="@+id/book_edit_patient_profile_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            healthengine:font="Lato-Regular.ttf"
+            android:text="Edit Selected Patient Information"
+            android:background="#ffffff"
+            android:textColor="@color/color_toolbar"
+            />
+
+    </LinearLayout>
+    <healthengine.android.com.healthengine.FontedText
+        android:id="@+id/continue_booking_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        healthengine:font="Lato-Regular.ttf"
+        android:text="Continue Booking"
+        android:gravity="center"
+        android:background="@color/color_toolbar"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:textSize="16sp"/>
+</RelativeLayout>

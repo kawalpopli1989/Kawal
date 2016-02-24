@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<healthengine.android.com.healthengine.FontedText
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:healthengine="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/edit_datelocation_list_text"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:text="Perth"
+    android:textColor="#000000"
+    healthengine:font="Lato-Semibold.ttf"
+    >
+
+</healthengine.android.com.healthengine.FontedText>

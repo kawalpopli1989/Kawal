@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:healthengine="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_gray">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/normal_gray">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/general_practice"
+            android:orientation="horizontal"
+            android:padding="7dp"
+            >
+
+            <LinearLayout
+                android:layout_weight="4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/general_practice"
+                android:orientation="vertical">
+                <healthengine.android.com.healthengine.FontedText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    healthengine:font="Lato-Regular.ttf"
+                    android:text="Monday, 11 Jan"
+                    android:textColor="#ffffff"
+                    />
+                <healthengine.android.com.healthengine.FontedText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    healthengine:font="Lato-Regular.ttf"
+                    android:text="08:00am"
+                    android:textColor="#ffffff"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/general_practice"
+                android:gravity="right"
+                android:orientation="vertical">
+                <healthengine.android.com.healthengine.FontedText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dr. Mark Kent"
+                    healthengine:font="Lato-Regular.ttf"
+                    android:textColor="#ffffff"
+
+                    />
+                <healthengine.android.com.healthengine.FontedText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    healthengine:font="Lato-Regular.ttf"
+                    android:text="CBD West Medical Centre"
+                    android:textColor="#ffffff"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <healthengine.android.com.healthengine.utils.CircularImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_launcher"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <healthengine.android.com.healthengine.FontedText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="DO YOU HAVE PRIVATE HEALTH INSURANCE?"
+            android:background="@color/normal_gray"
+            android:textColor="#000000"
+            healthengine:font="Lato-Regular.ttf"
+            android:paddingTop="20dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="5dp"
+            />
+
+        <healthengine.android.com.healthengine.FontedText
+            android:id="@+id/health_insurance_yes_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            healthengine:font="Lato-Regular.ttf"
+            android:text="Yes"
+
+            android:background="#ffffff"
+            android:textColor="#000000"
+           />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/normal_gray"/>
+        <healthengine.android.com.healthengine.FontedText
+            android:id="@+id/health_insurance_no_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            healthengine:font="Lato-Regular.ttf"
+            android:text="No"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            />
+
+        <LinearLayout
+            android:id="@+id/free_health_insurance_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <healthengine.android.com.healthengine.FontedText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                healthengine:font="Lato-Regular.ttf"
+                android:text="You could be paying too much for Health Insurance."
+                android:textColor="#2D9A32"
+                />
+
+            <healthengine.android.com.healthengine.FontedText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                healthengine:font="Lato-Regular.ttf"
+                android:text="You qualify for a free health insurance comparision.\n\t\u2022\t10 minutes obligation-free call, based on your needs.\n\t\u2022\t Get help saving money on your health insurance."
+                />
+
+            <healthengine.android.com.healthengine.FontedText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                healthengine:font="Lato-Medium.ttf"
+                android:text="Do you want a free health insurance evaluation?"
+                />
+
+            <healthengine.android.com.healthengine.FontedText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                healthengine:font="Lato-Regular.ttf"
+                android:text="Yes"
+
+                android:background="#ffffff"
+                android:textColor="#000000"
+                />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/normal_gray"/>
+            <healthengine.android.com.healthengine.FontedText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                healthengine:font="Lato-Regular.ttf"
+                android:text="No"
+                android:background="#ffffff"
+                android:textColor="#000000"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+    <healthengine.android.com.healthengine.FontedText
+        android:id="@+id/continue_booking_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        healthengine:font="Lato-Regular.ttf"
+        android:text="Continue Booking"
+        android:gravity="center"
+        android:background="@color/color_toolbar"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:textSize="16sp"/>
+</RelativeLayout>

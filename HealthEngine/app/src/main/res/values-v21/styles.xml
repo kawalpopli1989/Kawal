@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+
+    <style name="Theme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/color_toolbar</item>
+        <item name="android:colorPrimaryDark">@color/color_toolbar</item>
+    </style>
+    <style name="Theme.TranslucentNavigation" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+
+    <style name="LoginActivityTheme" parent="Theme.NoActionBar">
+        <item name="android:colorPrimary">@color/color_toolbar</item>
+        <item name="android:colorPrimaryDark">@color/color_toolbar</item>
+    </style>
+
+    <style name="SignupTheme" parent="Theme.NoActionBar">
+        <item name="android:colorPrimary">@color/signup_background_toolbar</item>
+        <item name="android:colorPrimaryDark">@color/signup_background_toolbar</item>
+    </style>
+
+    <style name="HomeScreenTheme" parent="Theme.NoActionBar">
+        <item name="android:colorPrimary">@color/color_white</item>
+    </style>
+
+
+
+
+
+
+
+
+</resources>

@@ -1,0 +1,223 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:healthengine="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e5e5"
+    android:orientation="vertical"
+    tools:context="healthengine.android.com.healthengine.fragments.SettingFragment">
+
+    <healthengine.android.com.healthengine.FontedText
+        android:id="@+id/account_heading"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_40"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:gravity="bottom"
+        android:text="@string/account"
+        android:textSize="@dimen/margin_15"
+        healthengine:font="Lato-Regular.ttf" />
+
+    <healthengine.android.com.healthengine.FontedText
+        android:id="@+id/login_text"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_below="@+id/account_heading"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:text="@string/login_txt"
+        android:textColor="@color/color_toolbar"
+        android:textSize="@dimen/margin_20"
+        android:visibility="gone"
+        healthengine:font="Lato-Regular.ttf" />
+
+    <LinearLayout
+        android:id="@+id/layout_when_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_10">
+
+            <healthengine.android.com.healthengine.FontedText
+                android:id="@+id/userName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:background="@android:color/white"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="oye@teri.com"
+                android:textColor="@android:color/black"
+                healthengine:font="Lato-Regular.ttf" />
+
+            <healthengine.android.com.healthengine.FontedText
+                android:id="@+id/logout_text"
+                android:layout_width="0dp"
+                android:layout_height="?actionBarSize"
+                android:layout_below="@+id/account_heading"
+                android:layout_weight="0.3"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="Log Out"
+                android:textColor="@color/color_toolbar"
+                android:textSize="@dimen/margin_20"
+                healthengine:font="Lato-Regular.ttf" />
+
+        </LinearLayout>
+
+        <healthengine.android.com.healthengine.FontedText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+            android:text="PATIENT PROFILES"
+            android:textSize="15sp"
+            healthengine:font="Lato-Regular.ttf" />
+
+       <!-- <TableLayout
+            android:id="@+id/profileTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            ></TableLayout>-->
+
+        <healthengine.android.com.healthengine.swipemenu.SwipeMenuListView
+            android:id="@+id/profileListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_05"
+            ></healthengine.android.com.healthengine.swipemenu.SwipeMenuListView>
+
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:orientation="horizontal"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_10"
+            >
+
+            <healthengine.android.com.healthengine.FontedText
+                android:layout_width="0dp"
+                android:layout_weight="0.9"
+                android:textColor="@android:color/black"
+                healthengine:font="Lato-Regular.ttf"
+                android:layout_height="wrap_content"
+                android:text="Adam Shaw"
+                android:background="@android:color/white"
+                />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_right_black"
+                />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/normal_gray"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:orientation="horizontal"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_10"
+            >
+
+            <healthengine.android.com.healthengine.FontedText
+                android:id="@+id/add_new_profile_text"
+                android:layout_width="0dp"
+                android:layout_weight="0.9"
+                android:layout_height="wrap_content"
+                healthengine:font="Lato-Regular.ttf"
+                android:text="Add New Profile"
+                android:background="@android:color/white"
+                android:textColor="@color/color_toolbar"
+                />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_right_black"
+                />
+        </LinearLayout>-->
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_10">
+
+        <healthengine.android.com.healthengine.FontedText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:background="@android:color/white"
+            android:text="@string/suggest_nearby_practices"
+            android:textColor="@android:color/black"
+            healthengine:font="Lato-Regular.ttf" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_15"
+            android:layout_weight="0.2" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/normal_gray" />
+
+    <LinearLayout
+        android:id="@+id/fragment_settings_about_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_10">
+
+        <healthengine.android.com.healthengine.FontedText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:background="@android:color/white"
+            android:text="@string/about_healthEngine"
+            android:textColor="@android:color/black"
+            healthengine:font="Lato-Regular.ttf" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:src="@drawable/arrow_right_black" />
+    </LinearLayout>
+
+
+</LinearLayout>

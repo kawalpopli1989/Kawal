@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="Theme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+
+
+    <style name="Theme.LoginActivity" parent="Theme.NoActionBar">
+
+    </style>
+
+
+
+</resources>

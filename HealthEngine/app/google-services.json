@@ -1,0 +1,51 @@
+{
+  "project_info": {
+    "project_id": "health-engine-b3678",
+    "project_number": "1087873917013",
+    "name": "Health Engine"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087873917013:android:5973d382ea861ab2",
+        "client_id": "android:healthengine.android.com.healthengine",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "healthengine.android.com.healthengine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1087873917013-m7jo4g0819aboh80jc6rfk1acvqptt1o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "healthengine.android.com.healthengine",
+            "certificate_hash": "918C749A09F51DEDF11C052AA86FFBAB72EC51CC"
+          }
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 2
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

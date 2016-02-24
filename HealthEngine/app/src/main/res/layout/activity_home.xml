@@ -1,0 +1,173 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:healthengine="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:fitsSystemWindows="true"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentTop="true"
+            android:background="@color/color_white"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <ImageView
+                android:id="@+id/toolbar_logo_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/logo_home"
+                />
+
+            <RelativeLayout
+                android:id="@+id/layout_inside_toolbar"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:visibility="gone">
+
+                <healthengine.android.com.healthengine.FontedButton
+                    android:id="@+id/toolbar_back_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Back"
+                    healthengine:font="Lato-Regular.ttf"
+                    android:drawableLeft="@drawable/ic_launcher"
+                    android:background="@null"
+                    android:layout_centerVertical="true"/>
+
+                <healthengine.android.com.healthengine.FontedText
+                    android:id="@+id/toolbar_title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    healthengine:font="Lato-Regular.ttf"
+                    android:text="Title"
+                    android:textSize="18sp"
+                    android:layout_centerInParent="true"
+                    />
+
+
+
+                <healthengine.android.com.healthengine.FontedText
+                    android:id="@+id/toolbar_right_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    healthengine:font="Lato-Regular.ttf"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    />
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_below="@+id/toolbar"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <RelativeLayout
+                android:id="@+id/home_doctor_tab"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:id="@+id/home_doctor_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/tabbar_doctor" />
+
+                <View
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/home_doctor_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="3dp"
+                    android:background="#FFFFFF" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/home_calendar_tab"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:id="@+id/home_calendar_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/tabbar_calendar" />
+
+                <View
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/home_calendar_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="3dp"
+                    android:background="#FFFFFF" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/home_settings_tab"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:id="@+id/home_settings_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/tabbar_settings" />
+
+                <View
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/home_settings_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="3dp"
+                    android:background="#FFFFFF" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nested_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tab_layout"
+            android:background="@android:color/white"
+            />
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
+

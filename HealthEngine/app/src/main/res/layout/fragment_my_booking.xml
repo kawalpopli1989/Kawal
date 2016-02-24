@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:healthengine="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_marginTop="100dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/my_bookings"/>
+
+        <healthengine.android.com.healthengine.FontedText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_message"
+            android:textSize="@dimen/help_screen_text_2"
+            healthengine:font="Lato-Regular.ttf"
+            android:textColor="@android:color/darker_gray"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_20"/>
+        <healthengine.android.com.healthengine.FontedText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_txt"
+            healthengine:font="Lato-Regular.ttf"
+            android:textAllCaps="true"
+            android:textSize="@dimen/help_screen_text_2"
+            android:textColor="@color/color_toolbar"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_20"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

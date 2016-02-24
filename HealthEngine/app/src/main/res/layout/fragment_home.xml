@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:healthengine="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:id="@+id/general_practitioner_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/general_practitioner_button"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/general_practitioner_image"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/icon_gp" />
+
+            <healthengine.android.com.healthengine.FontedText
+                android:id="@+id/general_practitioner_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                healthengine:font="Lato-Regular.ttf"
+                android:text="@string/general_practitioner"
+                android:textColor="@color/color_white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/dentist_physio_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/general_practitioner_button"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/general_dentist_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/dentist_button"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/general_dentist_image"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/icon_dentist" />
+
+                <healthengine.android.com.healthengine.FontedText
+                    android:id="@+id/general_dentist_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    healthengine:font="Lato-Regular.ttf"
+                    android:text="@string/dentist"
+                    android:textColor="@color/color_white"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/general_physiotherapist_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/physiotherapist_button"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/general_physiotherapist_image"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/icon_physio" />
+
+                <healthengine.android.com.healthengine.FontedText
+                    android:id="@+id/general_physiotherapist_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    healthengine:font="Lato-Regular.ttf"
+                    android:text="@string/physiotherapist"
+                    android:textColor="@color/color_white"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/chiro_physco_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dentist_physio_lay"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/general_chiropractor_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/chiropractor_button"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/general_chiropractor_image"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/icon_chiro" />
+
+                <healthengine.android.com.healthengine.FontedText
+                    android:id="@+id/general_chiropractor_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    healthengine:font="Lato-Regular.ttf"
+                    android:text="@string/chiropractor"
+                    android:textColor="@color/color_white"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/general_psycologist_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/psycologist_button"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/general_psycologist_image"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/icon_psych" />
+
+                <healthengine.android.com.healthengine.FontedText
+                    android:id="@+id/general_psycologist_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    healthengine:font="Lato-Regular.ttf"
+                    android:text="@string/psychologist"
+                    android:textColor="@color/color_white"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/more_specialities"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/audiologist_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/more_speciality_button"
+                    >
+
+
+                    <healthengine.android.com.healthengine.FontedText
+                        android:id="@+id/audiologist_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        healthengine:font="Lato-Regular.ttf"
+                        android:text="@string/audiologist"
+                        android:textColor="@color/color_white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/podiatrist_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/more_speciality_button"
+                    >
+
+
+                    <healthengine.android.com.healthengine.FontedText
+                        android:id="@+id/podiatrist_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        healthengine:font="Lato-Regular.ttf"
+                        android:text="@string/podiatrist"
+                        android:textColor="@color/color_white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/counsellor_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/more_speciality_button"
+                    >
+
+
+                    <healthengine.android.com.healthengine.FontedText
+                        android:id="@+id/counsellor_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        healthengine:font="Lato-Regular.ttf"
+                        android:text="@string/counsellor"
+                        android:textColor="@color/color_white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/skin_checks_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:background="@drawable/more_speciality_button"
+                    >
+
+
+                    <healthengine.android.com.healthengine.FontedText
+                        android:id="@+id/skin_checks_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        healthengine:font="Lato-Regular.ttf"
+                        android:text="@string/skin_checks"
+                        android:textColor="@color/color_white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/optometrist_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/more_speciality_button"
+                    >
+
+
+                    <healthengine.android.com.healthengine.FontedText
+                        android:id="@+id/optometrist_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        healthengine:font="Lato-Regular.ttf"
+                        android:text="@string/optometrist"
+                        android:textColor="@color/color_white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <healthengine.android.com.healthengine.FontedText
+            android:id="@+id/more_speaciallties_txt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_30"
+            android:layout_below="@+id/chiro_physco_lay"
+            healthengine:font="Lato-Regular.ttf"
+            android:layout_marginTop="@dimen/margin_05"
+            android:background="#e5e5e5"
+            android:gravity="center"
+            android:text="@string/more_speacilities"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="@dimen/text_size_12" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+                <healthengine.android.com.healthengine.FontedText
+                    android:id="@+id/fav_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    healthengine:font="Lato-Regular.ttf"
+                    android:layout_below="@+id/more_speaciallties_txt"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:drawableLeft="@drawable/icon_favorite"
+                    android:drawablePadding="@dimen/margin_05"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/favourities"
+                    android:textSize="@dimen/margin_15" />
+
+                <healthengine.android.com.healthengine.swipemenu.SwipeMenuListView
+                    android:id="@+id/fav_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@+id/fav_txt"
+                    android:layout_marginTop="@dimen/margin_05"
+                    ></healthengine.android.com.healthengine.swipemenu.SwipeMenuListView>
+
+                <healthengine.android.com.healthengine.FontedText
+                    android:id="@+id/prevous_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fav_list"
+                    android:layout_marginTop="@dimen/margin_15"
+                    healthengine:font="Lato-Regular.ttf"
+                    android:drawableLeft="@drawable/icon_previous"
+                    android:drawablePadding="@dimen/margin_05"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/previosuly_booked"
+                    android:textSize="@dimen/margin_15" />
+
+                <healthengine.android.com.healthengine.swipemenu.SwipeMenuListView
+                    android:id="@+id/prevous_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fav_txt"
+                    android:layout_marginTop="@dimen/margin_05"
+                    ></healthengine.android.com.healthengine.swipemenu.SwipeMenuListView>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

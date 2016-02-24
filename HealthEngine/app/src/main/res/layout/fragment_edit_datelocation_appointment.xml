@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:healthengine="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/general_practice"
+        android:padding="@dimen/margin_10"
+        >
+
+        <healthengine.android.com.healthengine.FontedEditText
+            android:id="@+id/date_edittext"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/edittext_background"
+            android:focusable="false"
+            android:padding="5dp"
+            healthengine:font="Lato-Regular.ttf"
+            android:focusableInTouchMode="false"
+            android:text="Today"
+            android:drawableLeft="@drawable/arrow_right_black"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"/>
+
+        <healthengine.android.com.healthengine.FontedEditText
+            android:id="@+id/location_edittext"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/edittext_background"
+            android:focusable="false"
+            healthengine:font="Lato-Regular.ttf"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:drawableLeft="@drawable/arrow_right_black"
+            android:focusableInTouchMode="false"
+            android:text="Current Location"/>
+
+        <healthengine.android.com.healthengine.FontedText
+            android:id="@+id/find_appointments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find Appointments"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_background"
+            android:padding="6dp"
+            android:textSize="15sp"
+            healthengine:font="Lato-Regular.ttf"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mcv_showOtherDates="all"
+            app:mcv_selectionColor="@color/signup_background_toolbar"
+            android:visibility="gone"
+            />
+        <LinearLayout
+            android:id="@+id/edit_location_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <healthengine.android.com.healthengine.FontedText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Location"
+                healthengine:font="Lato-Regular.ttf"
+                android:textColor="@color/color_toolbar"
+                android:padding="10dp"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/darker_gray"/>
+            <healthengine.android.com.healthengine.FontedText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="fremantile, WA 6160"
+                healthengine:font="Lato-LightItalic.ttf"
+                android:padding="10dp"/>
+            <healthengine.android.com.healthengine.FontedText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perth"
+                healthengine:font="Lato-LightItalic.ttf"
+                android:padding="10dp"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/darker_gray"/>
+
+            <ListView
+                android:id="@+id/edit_datelocation_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                ></ListView>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

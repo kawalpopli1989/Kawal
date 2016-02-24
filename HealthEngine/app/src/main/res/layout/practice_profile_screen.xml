@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:healthengine="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <android.support.design.widget.CoordinatorLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:fitsSystemWindows="true"
+            android:clipToPadding="false">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:layout_scrollFlags="scroll|enterAlways"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+
+                   >
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <healthengine.android.com.healthengine.FontedText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Search"
+                            healthengine:font="Lato-Regular.ttf"
+                            android:gravity="center"
+                            android:drawableLeft="@drawable/ic_launcher"
+                            />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/ic_launcher"/>
+
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nested_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="true"
+            android:layout_margin="10dp"
+            android:background="#ffffff"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+                    <healthengine.android.com.healthengine.FontedText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        healthengine:font="Lato-Regular.ttf"
+                        android:text="30 APPOINTMENTS JAN 11, 2016"
+                        android:textColor="#456672"
+
+                        />             />
+
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/practice_profile_recycler_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    >
+
+                </android.support.v7.widget.RecyclerView>
+
+                <healthengine.android.com.healthengine.FontedText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Book Appointment Now"
+                    healthengine:font="Lato-Regular.ttf"
+                    android:textColor="#ffffff"
+                    android:background="@color/app_sky_color"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    />
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dp"
+                    >
+                    <fragment
+                        android:id="@+id/map"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        class="com.google.android.gms.maps.SupportMapFragment" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/layout_border"
+                        android:layout_alignParentBottom="true"
+
+                        >
+                        <healthengine.android.com.healthengine.FontedText
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="1st Floor/847 Hay Street\n Perth WA 6000"
+                            android:textColor="#0089C7"
+                            healthengine:font="Lato-Regular.ttf"
+                            android:textSize="16sp"
+                            android:layout_margin="10dp"
+                            />
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/normal_gray"
+                            />
+
+                        <healthengine.android.com.healthengine.FontedText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            healthengine:font="Lato-Regular.ttf"
+                            android:text="(08)9486 4556"
+                            android:textColor="#000000"
+                            android:layout_margin="15dp"
+                            />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/percentage_layout"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        >
+
+                        <healthengine.android.com.healthengine.FontedText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="91%"
+                            healthengine:font="Lato-Regular.ttf"
+                            android:textColor="#ffffff"
+                            android:textSize="16sp"
+                            />
+
+                        <healthengine.android.com.healthengine.FontedText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="LIKE IT"
+                            healthengine:font="Lato-Regular.ttf"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp"
+                            />
+
+                    </LinearLayout>
+
+                    <healthengine.android.com.healthengine.FontedText
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:text="Convenient location. Prompt services."
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#000000"
+                        healthengine:font="Lato-Regular.ttf"
+                        android:textSize="14sp"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/layout_border"
+                        android:padding="10dp"
+                        />
+
+                </LinearLayout>
+
+                <healthengine.android.com.healthengine.FontedText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Read All 14 Reviews"
+                    healthengine:font="Lato-Regular.ttf"
+                    android:textColor="#18a9cf"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/directions_button"
+                    />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/normal_gray"
+                    />
+
+                <healthengine.android.com.healthengine.FontedText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ABOUT THIS PRACTICE"
+                    android:textColor="#000000"
+                    healthengine:font="Lato-Regular.ttf"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <healthengine.android.com.healthengine.FontedText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CBD West Medical Center commenced operating in 2007 with the goal of providing high quality general practice services for both individuals and corporate healthcare. All of our doctors have over twenty."
+                    android:textColor="@color/darker_gray"
+                    healthengine:font="Lato-Regular.ttf"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    />
+
+                <healthengine.android.com.healthengine.FontedText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show More"
+                    healthengine:font="Lato-Regular.ttf"
+                    android:textColor="#18a9cf"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:background="@drawable/directions_button"/>
+
+                <healthengine.android.com.healthengine.FontedText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PRICING"
+                    healthengine:font="Lato-Regular.ttf"
+                    android:textColor="#000000"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+
+
+                    />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+                    <healthengine.android.com.healthengine.FontedText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Standard Appointment "
+                        healthengine:font="Lato-Regular.ttf"
+                        android:textColor="@color/darker_gray"
+                        android:layout_gravity="center_horizontal"
+
+                        android:layout_weight="2"
+                        android:gravity="right"
+                        />
+                    <healthengine.android.com.healthengine.FontedText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=": $80.00"
+                        healthengine:font="Lato-Regular.ttf"
+                        android:textStyle="bold"
+                        android:textColor="@color/darker_gray"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <healthengine.android.com.healthengine.FontedText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Long Appointment "
+                        healthengine:font="Lato-Regular.ttf"
+                        android:textColor="@color/darker_gray"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="2"
+                        android:gravity="right"
+                        />
+                    <healthengine.android.com.healthengine.FontedText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=": $125.00"
+                        healthengine:font="Lato-Regular.ttf"
+                        android:textStyle="bold"
+                        android:textColor="@color/darker_gray"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+
+
+                <healthengine.android.com.healthengine.FontedText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    healthengine:font="Lato-Regular.ttf"
+                    android:text="OPENING HOURS"
+                    android:textColor="#000000"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+                    <healthengine.android.com.healthengine.FontedText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Mon-Fri "
+                        healthengine:font="Lato-Regular.ttf"
+                        android:textColor="@color/darker_gray"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        />
+                    <healthengine.android.com.healthengine.FontedText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=": 7:00am-5:00pm"
+                        healthengine:font="Lato-Regular.ttf"
+                        android:textStyle="bold"
+                        android:textColor="@color/darker_gray"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <healthengine.android.com.healthengine.FontedText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        healthengine:font="Lato-Regular.ttf"
+                        android:text="Sat-Sun "
+                        android:textColor="@color/darker_gray"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        />
+                    <healthengine.android.com.healthengine.FontedText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=": CLOSED"
+                        healthengine:font="Lato-Regular.ttf"
+                        android:textStyle="bold"
+                        android:textColor="@color/darker_gray"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <healthengine.android.com.healthengine.FontedText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Public Holidays "
+                        healthengine:font="Lato-Regular.ttf"
+                        android:textColor="@color/darker_gray"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        />
+                    <healthengine.android.com.healthengine.FontedText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=": CLOSED"
+                        android:textStyle="bold"
+                        healthengine:font="Lato-Regular.ttf"
+                        android:textColor="@color/darker_gray"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+
+                <healthengine.android.com.healthengine.FontedText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="INTERESTS AND PROCEDURES"
+                    healthengine:font="Lato-Regular.ttf"
+                    android:textColor="#000000"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <healthengine.android.com.healthengine.FontedText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Audiology\nCheck Ups\nChild Immunisations\nDiabeties\nFamily Planning\nGeneral Practice Services\n Immunisation\nMen\'s Health\nMental Health\nPreventative Health Care\nSexual Health\nSkin Checks"
+                    android:textColor="@color/darker_gray"
+                    healthengine:font="Lato-Regular.ttf"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    />
+
+
+                <healthengine.android.com.healthengine.FontedText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="STAFF"
+                    healthengine:font="Lato-Regular.ttf"
+                    android:textColor="#000"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_margin="10dp"
+                    />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/normal_gray"
+                    />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <healthengine.android.com.healthengine.utils.CircularImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/image"
+                            />
+
+                        <healthengine.android.com.healthengine.FontedText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            healthengine:font="Lato-Regular.ttf"
+                            android:text="Mark Kent"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <healthengine.android.com.healthengine.utils.CircularImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/image"
+                            />
+
+                        <healthengine.android.com.healthengine.FontedText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            healthengine:font="Lato-Regular.ttf"
+                            android:text="Mark Kent"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <healthengine.android.com.healthengine.utils.CircularImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/image"
+                            />
+
+                        <healthengine.android.com.healthengine.FontedText
+                            android:layout_width="wrap_content"
+                            healthengine:font="Lato-Regular.ttf"
+                            android:layout_height="wrap_content"
+                            android:text="Mark Kent"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <healthengine.android.com.healthengine.utils.CircularImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/image"
+                            />
+
+                        <healthengine.android.com.healthengine.FontedText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            healthengine:font="Lato-Regular.ttf"
+                            android:text="Mark Kent"
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/normal_gray"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp"
+                    >
+
+
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/practice_profile_viewpager"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+
+                    <healthengine.android.com.healthengine.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/practice_profile_viewpager_indicator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:padding="10dip"
+                    android:layout_alignParentBottom="true"
+
+                    />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>

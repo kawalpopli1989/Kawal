@@ -1,0 +1,23 @@
+package healthengine.android.com.healthengine.data;
+
+/**
+ * Created by mani on 5/2/16.
+ */
+public class LoginRequest implements DataInter {
+
+    private String email;
+    private String password;
+
+    public LoginRequest(String email,String password ){
+        this.email = email;
+        this.password = password;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+}

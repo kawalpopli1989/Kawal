@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:healthengine="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/dark_grey_background"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <healthengine.android.com.healthengine.FontedText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/text_size_20"
+        healthengine:font="Lato-Regular.ttf"
+        android:layout_marginTop="@dimen/text_size_20"
+        android:text="Northbridge Medical Centre"
+        android:textColor="#2b4b5a"/>
+
+    <healthengine.android.com.healthengine.FontedText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        healthengine:font="Lato-Regular.ttf"
+        android:textSize="@dimen/text_size_15"
+        android:layout_marginTop="@dimen/margin_05"
+        android:text="Perth"
+        android:textColor="#2b4b5a"/>
+
+
+
+    <healthengine.android.com.healthengine.FontedText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_15"
+        android:layout_marginTop="@dimen/margin_10"
+        healthengine:font="Lato-Regular.ttf"
+        android:text="@string/add_booking_to_favourite_for_next_reference"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_01"
+        android:background="@color/color_white"
+        android:layout_marginTop="@dimen/margin_10"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_40"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_favorite"
+                android:layout_marginRight="@dimen/margin_10"/>
+
+        <healthengine.android.com.healthengine.FontedText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_15"
+            healthengine:font="Lato-Regular.ttf"
+            android:textColor="@color/color_login_screen"
+            android:text="@string/add_to_favourite"/>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="@dimen/margin_01"
+            android:layout_height="match_parent"
+            android:background="@color/color_white"
+            />
+
+        <healthengine.android.com.healthengine.FontedText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            healthengine:font="Lato-Regular.ttf"
+            android:textColor="@color/color_login_screen"
+            android:textSize="@dimen/text_size_15"
+            android:text="@string/ignore"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

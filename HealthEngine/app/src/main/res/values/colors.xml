@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="header_color">#009FD2</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_black">#000000</color>
+
+
+    <!--Help Screen 1 Color-->
+    <color name="color_start_1">#2266a8</color>
+    <color name="color_end_1">#54a5a5</color>
+
+    <!--Help Screen 2 Color-->
+    <color name="color_start_2">#779a28</color>
+    <color name="color_end_2">#adaa1e</color>
+
+    <!--Help Screen 3Color-->
+    <color name="color_start_3">#da7127</color>
+    <color name="color_end_3">#cd9b24</color>
+
+    <color name="color_transparent">@android:color/transparent</color>
+
+    <!--Login Screen Colors-->
+    <color name="color_toolbar">#0086bd</color>
+    <color name="color_toolbar_light">#600086bd</color>
+    <color name="color_login_screen">#008ec8</color>
+    <color name="color_login_google_plus">#c20015</color>
+    <color name="color_login_facebook">#004080</color>
+    <color name="color_login_login_btn">#67b836</color>
+    <color name="color_login_member_text">#99d2e9</color>
+    <color name="darker_gray">#aaa</color>
+
+
+    <!--Sign up color-->
+    <color name="signup_background">#61c6c4</color>
+    <color name="signup_background_toolbar">#5cbbba</color>
+
+    <!--Home Screen-->
+    <color name="normal_gray">#e5e5e5</color>
+    <color name="light_gray">#efefef</color>
+    <color name="light_blue_feedback">#d1e4e3</color>
+    <color name="app_sky_color">#0089C7</color>
+
+    <!--Pratices Colors-->
+    <color name="general_practice">#2b4b5a</color>
+    <color name="dentist_practice">#008ec8</color>
+    <color name="physiotherapist_practice">#77c146</color>
+    <color name="chiropractor_practice">#61c6c4</color>
+    <color name="more_speciality">#989898</color>
+    <color name="psychologist">#ccd40f</color>
+
+
+
+
+</resources>

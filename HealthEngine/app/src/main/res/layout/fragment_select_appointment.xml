@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:healthengine="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/continue_booking_textview">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <healthengine.android.com.healthengine.FontedText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            healthengine:font="Lato-Regular.ttf"
+            android:textColor="#000000"
+            android:text="Speciality"/>
+
+        <healthengine.android.com.healthengine.FontedText
+            android:layout_width="fill_parent"
+            android:padding="10dp"
+            healthengine:font="Lato-Regular.ttf"
+            android:layout_height="wrap_content"
+            android:textColor="@color/darker_gray"
+            android:text="General Practice"
+            android:gravity="right"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <healthengine.android.com.healthengine.FontedText
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            healthengine:font="Lato-Regular.ttf"
+            android:textColor="#000000"
+            android:text="Practitioner"/>
+
+        <healthengine.android.com.healthengine.FontedText
+            android:id="@+id/practitioner_selection_text"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:text="Any"
+            healthengine:font="Lato-Regular.ttf"
+            android:textColor="@color/color_toolbar"
+            android:drawableRight="@drawable/arrow_right_black"
+            android:gravity="right"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/darker_gray"
+        />
+
+    <healthengine.android.com.healthengine.FontedText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingLeft="10dp"
+        healthengine:font="Lato-Regular.ttf"
+        android:paddingBottom="5dp"
+        android:background="@color/normal_gray"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:text="DATE AN TIME"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/darker_gray"
+        />
+
+
+    <healthengine.android.com.healthengine.FontedText
+        android:id="@+id/monthyear_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+
+        healthengine:font="Lato-Regular.ttf"
+        android:textColor="#000000"
+        android:text="January 2016"/>
+
+    <Gallery
+        android:id="@+id/date_gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+/>
+
+    <healthengine.android.com.healthengine.FontedText
+        android:id="@+id/day_date_month_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Monday 11 January"
+        android:textColor="#FFFFFF"
+        android:padding="5dp"
+        healthengine:font="Lato-Regular.ttf"
+        android:gravity="center"
+        android:background="@color/darker_gray"/>
+
+    <ListView
+        android:id="@+id/select_appointment_time_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"></ListView>
+
+</LinearLayout>
+
+    <healthengine.android.com.healthengine.FontedText
+        android:id="@+id/continue_booking_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        healthengine:font="Lato-Regular.ttf"
+        android:text="Continue Booking"
+        android:gravity="center"
+        android:background="@color/color_toolbar"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:textSize="16sp"/>
+</RelativeLayout>

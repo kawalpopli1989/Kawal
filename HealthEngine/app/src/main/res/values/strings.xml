@@ -1,0 +1,135 @@
+<resources>
+    <string name="app_name">HealthEngine</string>
+    <string name="facebook_app_id">1667711253446314</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="general_practitioner">General Practitioner</string>
+    <string name="dentist">Dentist</string>
+    <string name="chiropractor">Chiropractor</string>
+    <string name="psychologist">Psychologist</string>
+    <string name="physiotherapist">Physiotherapist</string>
+    <string name="audiologist">Audiologist</string>
+    <string name="podiatrist">Podiatrist</string>
+    <string name="counsellor">Counsellor</string>
+    <string name="skin_checks">Skin Checks</string>
+    <string name="optometrist">Optometrist</string>
+
+
+    <string name="server_client_id">1087873917013-ll2379f8kjsogboeod3v20is6g76kvj5.apps.googleusercontent.com</string>
+
+    <!--Help Screen 1-->
+    <string name="help_screen_1_text_1">Find and Book Health Appointments</string>
+    <string name="help_screen_1_text_2">Find available health appointments quickly.</string>
+    <string name="help_screen_1_text_3">Make bookings right in the app.</string>
+
+    <!--Help Screen 2-->
+    <string name="help_screen_2_text_1">Manage Bookings</string>
+    <string name="help_screen_2_text_2">Keep track of health appointment bookings.</string>
+    <string name="help_screen_2_text_3">Get directions and reminders.</string>
+
+    <!--Help Screen 3-->
+    <string name="help_screen_3_text_1">Get Started</string>
+    <string name="help_screen_3_text_2">Have a HealthEngine account?</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_txt">Log in</string>
+    <string name="sign_up_txt">Sign up</string>
+    <string name="skip_text">Skip</string>
+    <string name="start_text">Start</string>
+
+
+    <!--Login Screen-->
+    <string name="not_member">Not a member?</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="or">OR</string>
+    <string name="login_with_email">LOG IN WITH EMAIL</string>
+    <string name="fb_login">Log in with Facebook</string>
+    <string name="g_login">Log in with Google+</string>
+    <string name="text_cancel">Cancel</string>
+
+    <!--Sign up Screen-->
+    <string name="fb_signup">Sign up with Facebook</string>
+    <string name="g_signup">Sign up with Google+</string>
+    <string name="signup_with_email">SIGN UP WITH EMAIL</string>
+    <string name="f_name">First name</string>
+    <string name="l_name">Last name</string>
+    <string name="field_required">Field Required</string>
+
+    <!--Appointment Screen-->
+    <string name="more_speacilities">More specialties</string>
+    <string name="favourities">FAVOURITIES</string>
+    <string name="previosuly_booked">PREVIOUSLY BOOKED</string>
+    <string name="tap_to_add">Tap to add your favourite practices</string>
+
+    <!--Practice Search Screen-->
+    <string name="practice_search">Practice Search</string>
+
+    <!--My Bookings Screen-->
+    <string name="my_booking">My Bookings</string>
+    <string name="login_message">Please log in to your HealthEngine account to see your bookings.</string>
+
+    <!--Setting Screen-->
+    <string name="account">ACCOUNT</string>
+    <string name="suggest_nearby_practices">Suggest nearby practices</string>
+    <string name="about_healthEngine">About HealthEngine</string>
+    <string name="version">for Android version 1.0</string>
+    <string name="patient_profile">Patient Profile</string>
+    <string name="done">Done</string>
+    <string name="save">Save</string>
+
+    <!--Home Screen-->
+    <string name="upcoming_bookings">UPCOMING BOOKINGS</string>
+    <string name="hear_feedback_text">Wed love to hear about your experience using HealthEngine!</string>
+    <string name="leave_review">Leave a Review</string>
+
+    <string name="send_review">Send Review</string>
+    <string name="close">Close</string>
+
+    <string name="add_booking_to_favourite_for_next_reference">Add this practice to your favourites for easy booking of your next appointment.</string>
+
+    <string name="add_to_favourite">Add to Favourites</string>
+    <string name="ignore">Ignore</string>
+
+
+    <!--Appointment Practices-->
+    <string name="home">Home</string>
+    <string name="appointments">Appointments</string>
+    <string name="today">Today</string>
+    <string name="current_loc">Current Location</string>
+
+    <!--Geo Fence-->
+    <string name="geofence_not_available">geofence_not_available</string>
+    <string name="geofence_too_many_geofences">geofence_too_many_geofences</string>
+    <string name="geofence_too_many_pending_intents">geofence_too_many_pending_intents</string>
+    <string name="unknown_geofence_error">unknown_geofence_error</string>
+    <string name="geofence_transition_notification_text">geofence_transition_notification_text</string>
+    <string name="geofence_transition_entered">geofence_transition_entered</string>
+    <string name="geofence_transition_exited">geofence_transition_exited</string>
+    <string name="unknown_geofence_transition">unknown_geofence_transition</string>
+    <string name="geofence_transition_invalid_type">geofence_transition_invalid_type</string>
+    <string name="not_connected">not_connected</string>
+    <string name="geofences_added">geofences_added</string>
+    <string name="geofences_removed">geofences_removed</string>
+
+    <!--Patient Profile-->
+    <string name="contact_info">CONTACT INFORMATION</string>
+    <string name="mobile_num">Mobile Number</string>
+    <string name="notification_txt">Receive relevant notifications, updates and offers from HealthEngine and our partners.</string>
+    <string name="address">ADDRESS</string>
+    <string name="street">Street</string>
+    <string name="sub_urb">SubUrb</string>
+    <string name="post_code">Postcode</string>
+    <string name="dob">DATE OF BIRTH</string>
+    <string name="tap_dob">Tap to set</string>
+
+    <!--Terms of use-->
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="about">About</string>
+    <string name="about_text">Thank you for accessing our webiste located at www.healthengine.com.au (the Website). The Website is owned and operated by HealthEngine Pvt. Ltd. of PO Box 75, NorthBridge, WA 6865, Australia(H.E.). \n\nPlease read through the following general terms and conditions which will govern your use of the Website (Terms). By using this website, you acknowledge and confirm that you have read and understood these Terms and agree to abide by these Terms.</string>
+
+    <!--About Screen-->
+    <!--<string name="about_txt">HealthEngine is Australias largest online booking system and health marketplace.\n\nFounded in 2006 by a group of Australian doctors frustrated by how difficult and inefficient it was researching and accessing health practitioners, HealthEngine helps people find and book health appointments anywhere, anytime\n\nHealthEngine is Australias largest online booking system and health marketplace.\n\nFounded in 2006 by a group of Australian doctors frustrated by how difficult and inefficient it was researching and accessing health practitioners, HealthEngine helps people find and book health appointments anywhere, anytime\n\nHealthEngine is Australia's largest online booking system and health marketplace.\n\nFounded in 2006 by a group of Australian doctors frustrated by how difficult and inefficient it was researching and accessing health practitioners, HealthEngine helps people find and book health appointments anywhere, anytime\n\nHealthEngine is Australia's largest online booking system and health marketplace.\n\nFounded in 2006 by a group of Australian doctors frustrated by how difficult and inefficient it was researching and accessing health practitioners, HealthEngine helps people find and book health appointments anywhere, anytime\n\n</string>-->
+</resources>

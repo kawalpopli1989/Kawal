@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:healthengine="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:background="#e1f3e0"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:orientation="vertical"
+
+        >
+        <healthengine.android.com.healthengine.FontedText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8:30am"
+            healthengine:font="Lato-Regular.ttf"
+            android:textSize="15sp"
+            android:textColor="#18a9cf"
+
+            />
+
+        <healthengine.android.com.healthengine.FontedText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            healthengine:font="Lato-Regular.ttf"
+            android:text="TUESDAY"
+            android:textSize="11sp"
+            android:textColor="#18a9cf"
+            />
+
+        <healthengine.android.com.healthengine.FontedText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            healthengine:font="Lato-Regular.ttf"
+            android:text="Feb 02, 2016"
+            android:textColor="#18a9cf"
+            android:textSize="11sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        >
+        <healthengine.android.com.healthengine.FontedText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fictional Health Medical Center"
+            healthengine:font="Lato-Regular.ttf"
+            android:textSize="15sp"
+            android:textColor="#000"
+            />
+
+        <healthengine.android.com.healthengine.FontedText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 Ord Street"
+            healthengine:font="Lato-Regular.ttf"
+            android:textSize="15sp"
+            android:textColor="@color/darker_gray"
+
+            />
+
+        <healthengine.android.com.healthengine.FontedText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            healthengine:font="Lato-Regular.ttf"
+            android:text="Subiaco WA 6008"
+            android:textSize="15sp"
+            android:textColor="@color/darker_gray"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <healthengine.android.com.healthengine.FontedText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Directions"
+                android:padding="7dp"
+                android:layout_margin="5dp"
+                healthengine:font="Lato-Regular.ttf"
+                android:textColor="#18a9cf"
+                android:background="@drawable/directions_button"
+                />
+
+            <healthengine.android.com.healthengine.FontedText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                healthengine:font="Lato-Regular.ttf"
+                android:text="Cancel"
+                android:layout_alignParentRight="true"
+                android:textColor="#ff0000"
+                android:background="@drawable/cancel_button"
+                android:padding="7dp"
+                android:layout_margin="5dp"/>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+    <ImageView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:background="#e1f3e0"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:src="@drawable/ic_launcher"
+        android:padding="5dp"
+        >
+
+    </ImageView>
+</LinearLayout>

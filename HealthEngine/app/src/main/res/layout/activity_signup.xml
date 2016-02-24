@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:healthengine="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/signup_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/signup_background_toolbar"
+            android:fitsSystemWindows="true">
+
+            <healthengine.android.com.healthengine.FontedText
+                android:id="@+id/cancel_action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_10"
+                healthengine:font="Lato-Regular.ttf"
+                android:text="@string/text_cancel"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_15" />
+
+            <healthengine.android.com.healthengine.FontedText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                healthengine:font="Lato-Regular.ttf"
+                android:text="@string/sign_up_txt"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_15" />
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_10"
+            android:src="@drawable/logo_intro" />
+
+
+        <healthengine.android.com.healthengine.FontedText
+            android:id="@+id/facebool_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_fields_height"
+            android:layout_below="@+id/logo"
+            android:layout_marginTop="@dimen/margin_30"
+            healthengine:font="Lato-Regular.ttf"
+            android:background="@color/color_login_facebook"
+            android:gravity="center"
+            android:text="@string/fb_signup"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size_15" />
+
+        <healthengine.android.com.healthengine.FontedText
+            android:id="@+id/g_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_fields_height"
+            android:layout_below="@+id/facebool_btn"
+            android:layout_marginTop="@dimen/margin_05"
+            healthengine:font="Lato-Regular.ttf"
+            android:background="@color/color_login_google_plus"
+            android:gravity="center"
+            android:text="@string/g_signup"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size_15" />
+
+        <LinearLayout
+            android:id="@+id/or_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/g_btn"
+            android:layout_marginTop="@dimen/margin_15"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/margin_50"
+                android:layout_height="1dp"
+                android:background="@color/color_white" />
+
+            <healthengine.android.com.healthengine.FontedText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:layout_marginRight="@dimen/margin_15"
+                healthengine:font="Lato-Regular.ttf"
+                android:text="@string/or"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_12"
+                android:textStyle="italic" />
+
+            <View
+                android:layout_width="@dimen/margin_50"
+                android:layout_height="1dp"
+                android:background="@color/color_white" />
+        </LinearLayout>
+
+
+        <healthengine.android.com.healthengine.FontedText
+            android:id="@+id/login_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/or_view"
+            healthengine:font="Lato-Regular.ttf"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/margin_05"
+            android:layout_marginTop="@dimen/margin_15"
+            android:text="@string/signup_with_email"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size_12" />
+
+        <LinearLayout
+            android:id="@+id/name_fields"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_fields_height"
+            android:layout_below="@+id/login_txt"
+            android:orientation="horizontal">
+
+            <healthengine.android.com.healthengine.FontedEditText
+                android:id="@+id/fname_field"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/login_fields_height"
+                android:layout_below="@+id/login_txt"
+                android:layout_weight="1"
+                healthengine:font="Lato-Regular.ttf"
+                android:background="@color/color_white"
+                android:elevation="0dp"
+                android:gravity="center_vertical"
+                android:hint="@string/f_name"
+                android:singleLine="true"
+                android:paddingLeft="@dimen/margin_10"
+                android:textSize="@dimen/text_size_15" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/email_field"
+                android:background="@color/darker_gray" />
+
+            <healthengine.android.com.healthengine.FontedEditText
+                android:id="@+id/lname_field"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/login_fields_height"
+                android:layout_below="@+id/login_txt"
+                android:layout_weight="1"
+                healthengine:font="Lato-Regular.ttf"
+                android:background="@color/color_white"
+                android:elevation="0dp"
+                android:gravity="center_vertical"
+                android:hint="@string/l_name"
+                android:paddingLeft="@dimen/margin_10"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_15" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/grey_line_1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/name_fields"
+            android:background="@color/darker_gray" />
+
+
+        <healthengine.android.com.healthengine.FontedEditText
+            android:id="@+id/email_field"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_fields_height"
+            android:layout_below="@+id/grey_line_1"
+            android:background="@color/color_white"
+            healthengine:font="Lato-Regular.ttf"
+            android:elevation="0dp"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:hint="@string/email"
+            android:paddingLeft="@dimen/margin_10"
+            android:inputType="textEmailAddress"
+            android:textSize="@dimen/text_size_15" />
+
+
+        <View
+            android:id="@+id/grey_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/email_field"
+            android:background="@color/darker_gray" />
+
+        <healthengine.android.com.healthengine.FontedEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_fields_height"
+            android:layout_below="@+id/grey_line"
+            healthengine:font="Lato-Regular.ttf"
+            android:background="@color/color_white"
+            android:gravity="center_vertical"
+            android:hint="@string/password"
+            android:singleLine="true"
+            android:paddingLeft="@dimen/margin_10"
+            android:inputType="textPassword"
+            android:textSize="@dimen/text_size_15" />
+
+        <healthengine.android.com.healthengine.FontedText
+            android:id="@+id/signup_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_fields_height"
+            android:layout_below="@+id/password"
+            healthengine:font="Lato-Regular.ttf"
+            android:background="@color/color_login_login_btn"
+            android:gravity="center"
+            android:text="@string/sign_up_txt"
+            android:textColor="@color/color_login_member_text"
+            android:textSize="@dimen/text_size_15" />
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:healthengine="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="250dp"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+    <healthengine.android.com.healthengine.FontedText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Appointment Check-in"
+        healthengine:font="Lato-Regular.ttf"
+        android:padding="10dp"
+        android:gravity="center"
+        android:background="#65d965"
+        android:textColor="#FFFFFF"
+        />
+
+    <healthengine.android.com.healthengine.FontedText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check In Success"
+        android:layout_marginTop="10dp"
+        healthengine:font="Lato-Regular.ttf"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        />
+
+    <healthengine.android.com.healthengine.FontedText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please take a seat. (This text comes from API)"
+        android:layout_marginTop="10dp"
+        healthengine:font="Lato-Regular.ttf"
+        android:gravity="center"
+        android:textColor="#000000"
+        />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/darker_gray"
+        android:layout_marginTop="5dp"
+        />
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <healthengine.android.com.healthengine.FontedText
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        healthengine:font="Lato-Regular.ttf"
+        android:text="Ok"
+        android:gravity="center"
+        android:textColor="#0b93cc"
+        android:padding="10dp"
+        />
+
+
+
+</LinearLayout>
+
+</LinearLayout>
